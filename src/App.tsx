@@ -10,6 +10,11 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
+import Rooms from "./pages/Rooms";
+import RoomDetail from "./pages/RoomDetail";
+import Booking from "./pages/Booking";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
 
 // Admin Pages
@@ -35,6 +40,11 @@ const App = () => (
             <Route path="about" element={<About />} />
             <Route path="services" element={<Services />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="rooms" element={<Rooms />} />
+            <Route path="rooms/:id" element={<RoomDetail />} />
+            <Route path="booking" element={<Booking />} />
+            <Route path="privacy" element={<Privacy />} />
+            <Route path="terms" element={<Terms />} />
           </Route>
           
           {/* Admin Routes */}
